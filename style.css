@@ -1,0 +1,65 @@
+/* ---------------- BACKGROUND IMAGE ---------------- */
+[data-testid="stAppViewContainer"] {
+    background-image: url("bg.jpg");   /* <-- your image name */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Optional dark overlay for readability */
+[data-testid="stAppViewContainer"]::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+}
+
+/* ---------------- BODY FALLBACK ---------------- */
+body {
+    background-color: #696a6d;
+}
+
+/* ---------------- HEADINGS ---------------- */
+.main-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #e2dbc8;
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #e4dfd4;
+    margin-top: 25px;
+}
+
+/* ---------------- CONTENT CARD ---------------- */
+.main .block-container {
+    background-color: rgba(17, 16, 16, 0.85);
+    padding: 2rem;
+    border-radius: 16px;
+}
+
+/* ---------------- CARD ---------------- */
+.card {
+    background-color: rgb(17, 16, 16);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+
+/* ---------------- METRICS ---------------- */
+.metric-box {
+    background-color: #67a813;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #111;
+}
