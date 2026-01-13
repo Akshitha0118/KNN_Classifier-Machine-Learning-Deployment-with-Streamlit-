@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 dataset=pd.read_csv(r'C:\Users\ADMIN\Downloads\logit classification.csv')  
 
 x= dataset.iloc[:,[2,3]].values
@@ -87,4 +88,5 @@ filename='KNN_Classifier.pkl'
 with open(filename,'wb') as file:
     pickle.dump(classifier,file)
 print('KNN_Classifier model has been as pickled successfully')
+
 
